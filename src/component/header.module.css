@@ -1,0 +1,41 @@
+.header-main-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: mediumslateblue;
+    color: #ffffff;
+}
+
+.header-company-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-login-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.main-heading{
+    margin-left:30px;
+    font-size: 25px;
+    font-family: "Roboto";
+}
+
+.login-link-style{
+    font-size: 20px;
+    margin-left: 10px;
+    color:#a9a9a9;
+    font-weight: bold;
+}
+
+.login-button{
+    background-color: mediumslateblue;
+    border: 0px;
+    color: #ffffff;
+    font-size: 25px;
+}
+

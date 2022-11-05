@@ -1,0 +1,46 @@
+{
+    "links":[
+        {
+            "label":"Category",
+            "href":"/category"
+
+        },
+        {
+            "label":"Sell",
+            "href":"/sell"
+
+        },
+        {
+            "label":"Buy",
+            "href":"/buy"
+        },
+        {
+            "label":"Return",
+            "href":"/return"
+
+        },
+        {
+            "label":"Language",
+            "href":"/language"
+
+        },
+        {
+            "label":"Help",
+            "href":"/help"
+        },
+        {
+            "label":"AddProduct",
+            "href":"/addProduct"
+
+        },
+        {
+            "label":"CustomerCare",
+            "href":"/Customer Care"
+
+        },
+        {
+            "label":"SetLocation",
+            "href":"/Set Location"
+        }
+    ]
+}
