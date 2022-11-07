@@ -9,12 +9,18 @@ import cart from './image/cart.png';
 import heart from './image/heart.png';
 import message from './image/message.png';
 
-import  IconName, { FcAcceptDatabase }  from "react-icons/fc";
 
+
+// import FaUser  from "react-icons/fc";
+
+// import BsHeartFill from "react-icons/fc";
+
+// import  BsFillCartFill   from "react-icons/fc";
+
+// import AiFillMessage from "react-icons/fc";
 
 const imagesList=[
     {    
-
         imageUrl:user,
         alt:"user"
     },
@@ -43,7 +49,7 @@ const SearchBox:React.FC<{}> =()=>{
             <div >   
                 <ul>
                     {imagesList.map((eachImage)=>(
-                        <img src={eachImage.imageUrl} className={styles['images-el']} alt={eachImage.alt} />
+                       <img src={eachImage.imageUrl} alt={eachImage.alt} className={styles['images-el']} />
                     ))}
                 </ul>
             </div>
