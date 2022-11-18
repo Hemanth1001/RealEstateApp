@@ -1,36 +1,33 @@
 import React from "react";
-import styles from './navbar.module.css';
-import  * as data from  "./links.json";
-const linkString=JSON.stringify(data);
-const links=JSON.parse(linkString).links;
+//import {Container,Nav, Navbar as NavbarBS } from 'react-bootstrap';
+//import { NavLink  } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import styles from "./navbar.module.css";
 
-type Link={
-    label:string;
-    href:string
-}
-
-const Links:React.FC<{links:Link[]}>=()=>{
-    return(
-        <div className={styles['link-container']} >
-                {links.map((link: Link)=>{
-                    return(
-                        <div key={link.href} className={styles['link']}>
-                            <a href={link.href} className={styles['link-el']} >
-                                {link.label}
-                            </a>
-                        </div>
-                    )
-                })}
-            </div>
-    )
-}
-
-const Navbar:React.FC<{}> =()=>{
-    return(
-        <div className={styles.navbar}  >
-            <Links links={links} />
+import { FcExpand } from "react-icons/fc";
+function Navbar() {
+  return (
+    <div className={styles.navbar}>
+      <div className={styles.dropdown}>
+        <button className={styles.dropbtn}>
+          Category
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div className={styles["dropdown-content"]}>
+          <Link to="/category">HouseForRent</Link>
+          <Link to="/category">HouseForSale</Link>
         </div>
-    )
+      </div>
+      <Link to="/sell">Sell</Link>
+      <Link to="/buy">Buy</Link>
+      <Link to="/return">Return</Link>
+      <Link to="/language">Language</Link>
+      <Link to="/help">Help</Link>
+      <Link to="/addProduct">Add Product</Link>
+      <Link to="/customerCare">Customer Care</Link>
+      <Link to="/setMyLocation">Set My Location</Link>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;

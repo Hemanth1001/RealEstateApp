@@ -1,0 +1,17 @@
+{
+    "menus":[
+        {
+            "Menu":"House for rent",
+            "href":"/rent",
+            "title":"rent",
+            "cName":"dropdown-link"
+
+        },
+        {
+            "label":"House for sale",
+            "href":"/sale",
+            "title":"sale",
+            "cName":"dropdown-link"
+        }
+    ]
+}
