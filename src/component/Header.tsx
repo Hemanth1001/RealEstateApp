@@ -1,29 +1,28 @@
 import React from "react";
-import styles from "./header.module.css";
 
-const Header: React.FC<{}> = () => {
+export const Header: React.FC<{}> = () => {
   return (
-    <div className={styles["header-main-container"]}>
-      <div className={styles["header-company-container"]}>
-        <h1 className={styles["main-heading"]}>
+    <div className="max-w-[1440px] bg-violet-700 flex flex-row justify-between p-4">
+      <div className="flex flex-row item-center">
+        <h1 className="text-white text-2xl">
           Sell or buy any product from ADZ Monster
         </h1>
         <a
           rel="google"
           href="https://www.google.com/"
           target="_self"
-          className={styles["login-link-style"]}
+          className="px-6 text-2xl underline decoration-solid  text-gray-600"
         >
           Login or Register now
         </a>
       </div>
-      <div className={styles["header-login-button-container"]}>
+      <div className="flex flex-row items-center">
         <div>
-          <button className={styles["login-button"]}>Login</button>
+          <button className="text-2xl text-white">Login</button>
         </div>
-        <h2>|</h2>
+        <h2 className="px-1 text-2xl text-white">|</h2>
         <div>
-          <button className={styles["login-button"]}>My Account</button>
+          <button className="text-2xl text-white px-2">My Account</button>
         </div>
       </div>
     </div>
