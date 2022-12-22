@@ -6,6 +6,7 @@ import SearchBox from "./SearchBox";
 import Navbar from "./Navbar";
 import { Banner } from "./Banner";
 import { HouseList } from "./HouseList";
+import PropertyDetails from "./PropertyDetails";
 
 //import CarouselSecound from "./CarouselSecound";
 
@@ -19,6 +20,10 @@ function App() {
       <Navbar />
       <Banner />
       <HouseList />
+      {/* <Routes>
+        <Route path="/property/:id" element={<PropertyDetails />} />
+      </Routes> */}
+
       {/* <Routes>
         <Route path="/category" element={<CarouselSecound />} />
       </Routes>
